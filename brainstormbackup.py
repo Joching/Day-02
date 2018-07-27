@@ -1,8 +1,10 @@
 import random
 import time
 
+
 topics = ['Animals','Colors','Youtubers','Video Game','Movies','Books','Tv shows','Foods']
 answers = []
+timer = 0
 t = 0
 m = 0
 
@@ -18,9 +20,6 @@ for x in range(10):
          answers.append(single_answer)
 
 
-t =  time.time() -  timer_start 
-
-
 print ('You answered'.center(83,'-'))
 
 
@@ -29,9 +28,12 @@ for i in answers:
     print('|',' '.center(79,' '),'|',)  
 
    
+
+
 print ('-'.center(83,'-'))
 
 
+t =  time.time() -  timer_start 
 
 
 if m == 1 and t == 1:
