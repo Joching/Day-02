@@ -31,7 +31,10 @@ for i in answers:
    
 print ('-'.center(83,'-'))
 
-
+for w in range (10):
+    if t >= 60:
+        t = t - 60
+        m = m + 1
 
 
 if m == 1 and t == 1:
@@ -42,3 +45,5 @@ elif  m == 1:
     print(f'You took {m} minute and {t:.2f} seconds to answer.'.center(80))
 elif t == 1:
     print(f'You took {m} minutes and {t:.2f} second to answer.'.center(80))
+else:
+    print(f'You took {m} minutes and {t:.2f} seconds to answer.'.center(80))
